@@ -31,14 +31,51 @@
         <a href="#home">Beranda</a>
         <a href="#about">Tentang kami</a>
         <a href="#katalog">Katalog</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
+      <!-- search form start -->
+       <div class="search-form">
+        <input type="search" id="search-box" placeholder="cari disini...">
+        <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      <!-- search form start -->
+
+      <!-- shopping cart start -->
+       <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/tentang kami persegi.jpg" alt="">
+          <div class="item-detail">
+            <h3>produk 1</h3>
+            <div class="item-price">Rp 30.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/tentang kami persegi.jpg" alt="">
+          <div class="item-detail">
+            <h3>produk 1</h3>
+            <div class="item-price">Rp 30.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/tentang kami persegi.jpg" alt="">
+          <div class="item-detail">
+            <h3>produk 1</h3>
+            <div class="item-price">Rp 30.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+       </div>
+      <!-- shopping cart end -->
+
     </nav>
     <!-- NAVBAR END -->
 
@@ -157,6 +194,79 @@
     </section>
     <!-- MENU SECTION END -->
 
+    <!-- PRODUCT SECTION START -->
+    <section class="products" id="products">
+      <h2>Produk Biji Kopi</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur ea sed sequi similique perferendis placeat.</p>
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-img">
+            <img src="img/coffe-bean.jpg" alt="">
+          </div>
+          <div class="product-content">
+            <h3>biji kopi</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 10.000 <span>RP 29.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-img">
+            <img src="img/coffe-bean.jpg" alt="">
+          </div>
+          <div class="product-content">
+            <h3>biji kopi</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 10.000 <span>RP 29.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-img">
+            <img src="img/coffe-bean.jpg" alt="">
+          </div>
+          <div class="product-content">
+            <h3>biji kopi</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 10.000 <span>RP 29.000</span></div>
+          </div>
+        </div>
+        
+        
+        
+        
+      </div>
+    </section>
+    <!-- PRODUCT SECTION END -->
+
     <!-- CONTACT SECTION START -->
     <section id="contact" class="contact">
       <h2>Kontak Kami</h2>
@@ -208,6 +318,29 @@
       </div>
      </footer>
     <!-- FOOTER END -->
+    <!-- modal box item-detail -->
+     <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/coffe-bean.jpg" alt="">
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam neque ipsam hic, dolor voluptatum itaque fuga. Perferendis non expedita dolores sed, unde ipsum consectetur. Corrupti.</p>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 10.000 <span>RP 29.000</span></div>
+            <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- modal box item-detail -->
 
     <!--FEATHER ICONS-->
     <script>
